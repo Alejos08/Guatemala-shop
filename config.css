@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 10px;
+  background: #fff;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* ===== Categorías ===== */
+.categorias {
+  margin: 20px 0;
+}
+
+.categorias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categorias li {
+  margin: 5px 0;
+}
+
+/* ===== Productos ===== */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.producto {
+  border: 1px solid #000;
+  background: #fff;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.producto img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Etiquetas de colores */
+.etiqueta {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.etiqueta.orange { background: rgb(35, 142, 236); }
+
+.etiqueta.green { background: rgb(0, 58, 128); }
+/* Descripción del producto */
+.descripcion {
+  position: absolute;
+  bottom: 25px;
+  left: 5px;
+  right: 5px;
+  font-size: 13px;
+  text-align: center;
+  color: #333;
+}
+
+
+.producto {
+  border: 1px solid #000;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;   /* Hace que la imagen quede arriba y el texto abajo */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* espacio entre la imagen y el texto */
+}
+
+.etiqueta {
+  align-self: flex-end;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.descripcion {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  margin-top: 5px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  border: 3px solid #000;
+  padding: 10px;
+  background: #345381;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
